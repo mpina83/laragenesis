@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "tether": "^1.2.0",
     "jQuery": "2.2.2",
+    "tether": "^1.2.0",
+    "holderjs": "^2.9.3",
     "bootstrap": "v4.0.0-alpha.2",
     "angular": "~1.5.3",
     "angular-animate": "1.5.3",
