@@ -24,7 +24,7 @@ angular
                 ncyBreadcrumb: {
                     label: 'Root',
                     skip: true
-                },
+                }/*,
                 resolve: {
                     loadPlugin: ['$ocLazyLoad', function ($ocLazyLoad) {
                         // you can lazy load files for an existing module
@@ -37,10 +37,10 @@ angular
                     loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
                         // you can lazy load controllers
                         return $ocLazyLoad.load({
-                            files: ['assets/js/controllers/shared.js']
+                            /!*files: ['assets/js/controllers/shared.js']*!/
                         });
                     }]
-                }
+                }*/
             })
             .state('app.main', {
                 url: '/dashboard',
@@ -51,11 +51,11 @@ angular
                 },
                 //page subtitle goes here
                 params: { subtitle: 'Welcome to ROOT powerfull Bootstrap & AngularJS UI Kit' },
-                resolve: {
+               /* resolve: {
                     loadPlugin: ['$ocLazyLoad', function ($ocLazyLoad) {
                         // you can lazy load files for an existing module
                         return $ocLazyLoad.load([
-                            {
+/!*                            {
                                 serie: true,
                                 files: ['assets/js/libs/moment.min.js']
                             },
@@ -75,16 +75,16 @@ angular
                             {
                                 serie: true,
                                 files: ['assets/js/libs/angular-toastr.tpls.min.js']
-                            }
+                            }*!/
                         ]);
                     }],
                     loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
                         // you can lazy load controllers
                         return $ocLazyLoad.load({
-                            files: ['assets/js/controllers/main.js']
+                           /!* files: ['assets/js/controllers/main.js']*!/
                         });
                     }]
-                }
+                }*/
             })
             .state('app.main2', {
                 url: '/dashboard2',
@@ -93,11 +93,11 @@ angular
                     label: 'Alternative'
                 },
                 params: { subtitle: 'Subtitle goes here!' },
-                resolve: {
+               /* resolve: {
                     loadPlugin: ['$ocLazyLoad', function ($ocLazyLoad) {
                         // you can lazy load files for an existing module
                         return $ocLazyLoad.load([
-                            {
+/!*                            {
                                 serie: true,
                                 files: ['assets/js/libs/moment.min.js']
                             },
@@ -117,16 +117,16 @@ angular
                             {
                                 serie: true,
                                 files: ['assets/js/libs/angular-toastr.tpls.min.js']
-                            }
+                            }*!/
                         ]);
                     }],
                     loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
                         // you can lazy load controllers
                         return $ocLazyLoad.load({
-                            files: ['assets/js/controllers/main.js']
+                            /!*files: ['assets/js/controllers/main.js']*!/
                         });
                     }]
-                }
+                }*/
             })
             .state('appSimple', {
                 abstract: true,
@@ -204,7 +204,7 @@ angular
                 ncyBreadcrumb: {
                     label: '{{ "INBOX" | translate }}'
                 },
-                resolve: {
+              /*  resolve: {
                     loadPlugin: ['$ocLazyLoad', function ($ocLazyLoad) {
                         // you can lazy load files for an existing module
                         return $ocLazyLoad.load([
@@ -219,6 +219,6 @@ angular
                             files: ['assets/js/controllers/uikits/email.js']
                         });
                     }]
-                }
+                }*/
             });
     }]);
