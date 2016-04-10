@@ -14,16 +14,19 @@ require('laravel-elixir-angular');
  |
  */
 
- elixir.config.sourcemaps = false;
- elixir.config.registerWatcher("default", "angular/**");
+elixir.config.sourcemaps = false;
+elixir.config.registerWatcher("default", "angular/**");
 
- elixir(function(mix) {
- 	mix
- 	.bower()
- 	.angular('angular/')
- 	.less('../../../angular/**/*.less', 'resources/.tmp/')
- 	.copy('angular/app/**/*.html', 'public/views/app/')
- 	.copy('angular/directives/**/*.html', 'public/views/directives/')
- 	.stylesIn('resources/.tmp', 'public/css/');
+elixir(function (mix) {
+	mix
+		.bower()
+		.angular('angular/')
+		.less('../../../angular/**/*.less', 'resources/.tmp/')
+		.copy('angular/app/**/*.html', 'public/views/')
+		.copy('angular/views/', 'public/views/')
+		.copy('angular/directives/**/*.html', 'public/views/directives/')
+		.copy('resources/assets/fonts', 'public/fonts/')
+		.copy('resources/assets/img', 'public/assets/img/')
+		.stylesIn('resources/.tmp', 'public/css/');
 
- });
+});
