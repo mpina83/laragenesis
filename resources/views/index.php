@@ -17,7 +17,9 @@
         <!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
         <title>ROOT Admin - UI Admin Kit</title>
         <!-- Main styles for this application -->
+        <link href="css/vendor.css" rel="stylesheet">
         <link href="css/all.css" rel="stylesheet">
+
     </head>
     <!-- BODY options, add following classes to body to change options
 		1. 'compact-nav'     	  - Switch sidebar to minified version (width 50px)
