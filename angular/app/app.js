@@ -29,7 +29,10 @@ angular
         'oc.lazyLoad',
         'pascalprecht.translate',
         'ncy-angular-breadcrumb',
-        'angular-loading-bar'
+        'angular-loading-bar',
+        'toastr',
+        'angular-echarts',
+        'chart.js'
     ])
     .config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
         cfpLoadingBarProvider.includeSpinner = false;
