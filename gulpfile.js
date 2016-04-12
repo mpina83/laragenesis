@@ -25,7 +25,7 @@ elixir(function (mix) {
 		.copy('angular/app/**/*.html', 'public/views/')
 		.copy('angular/views/', 'public/views/')
 		.copy('angular/directives/**/*.html', 'public/views/directives/')
-		.copy('resources/assets/fonts', 'public/fonts/')
+		.copy('resources/assets/fonts/', 'public/fonts/')
 		.copy('resources/assets/img', 'public/assets/img/')
 		.stylesIn('resources/.tmp', 'public/css/');
 
